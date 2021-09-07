@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text as RNText, StyleSheet } from 'react-native';
 
-function Text({ style, heading, bold, center, children }) {
+function Text({ style, heading, bold, center, children, ...props }) {
   const combinedStyles = [
     heading && styles.heading,
     bold && styles.bold,
@@ -9,7 +9,11 @@ function Text({ style, heading, bold, center, children }) {
     style,
   ];
 
-  return <RNText style={combinedStyles}>{children}</RNText>;
+  return (
+    <RNText style={combinedStyles} {...props}>
+      {children}
+    </RNText>
+  );
 }
 
 const styles = StyleSheet.create({

@@ -48,8 +48,8 @@ function WelcomeScreen() {
           Welcome!
         </Text>
 
-        <Animated.View style={animatedStyle}>
-          <Text center>
+        <Animated.View style={animatedStyle} testID="Animated View">
+          <Text center testID="Animated Text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
             condimentum turpis. Integer non tempus leo.
           </Text>
@@ -58,7 +58,7 @@ function WelcomeScreen() {
         <Button
           style={styles.button}
           onPress={() => setHidden((prevState) => !prevState)}>
-          Hide Content
+          Toggle Content
         </Button>
       </View>
     </SafeAreaView>
