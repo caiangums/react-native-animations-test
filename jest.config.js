@@ -3,5 +3,9 @@ module.exports = {
   transform: {
     '^.+\\.jsx$': 'babel-jest',
   },
-  setupFiles: ['./jest/setup.js', 'jest-date-mock'],
+  setupFilesAfterEnv: [
+    '@testing-library/jest-native/extend-expect',
+    './jest/setup.js',
+    'jest-date-mock',
+  ],
 };
