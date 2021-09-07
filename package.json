@@ -6,6 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
+    "test": "jest",
     "lint": "eslint src --ext .js,.jsx",
     "lint:fix": "eslint src --ext .js,.jsx --fix"
   },
@@ -30,10 +31,17 @@
     "@babel/runtime": "^7.13.10",
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.1.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^7.22.0",
     "eslint-import-resolver-babel-module": "^5.2.0",
     "eslint-plugin-import": "^2.22.1",
-    "metro-react-native-babel-preset": "^0.65.2"
+    "jest": "^27.1.0",
+    "jest-date-mock": "^1.0.8",
+    "metro-react-native-babel-preset": "^0.65.2",
+    "react-test-renderer": "^17.0.2"
+  },
+  "resolutions": {
+    "react-native/@jest/create-cache-key-function": "^27.1.0"
   }
 }
