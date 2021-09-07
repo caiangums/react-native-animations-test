@@ -1,8 +1,16 @@
-# TimeTravelTestExample
+# Test Animations - Time Travel Example
 
-> React Native project
+> Example project with an implementation of _Time Travel_ for testing React Native `Animations`
 
-_Describe your project here_
+Related Article: [Test Animations - A Travel through Time](https://caian.dev/posts/test-animations-react-native/)
+
+## Run
+
+See tests with
+
+```sh
+yarn test
+```
 
 ## Development
 
@@ -29,3 +37,8 @@ $ yarn android
 ```sh
 $ cd ios ; pod install
 ```
+
+## Reference
+
+This project used [🌲Eryn](https://github.com/caiangums/react-native-template-eryn/) to be started!
+
