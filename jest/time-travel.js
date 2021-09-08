@@ -18,12 +18,11 @@ export function setup(startDate = '') {
  * Travel a specific amount of time (in ms) inside a test
  */
 export function travel(time = FRAME_TIME) {
-  const framesToRun = time / FRAME_TIME;
-  let actualFrame = 0;
+  let framesToRun = time / FRAME_TIME;
 
-  while (actualFrame < framesToRun) {
+  while (framesToRun > 0) {
     advanceOneFrame();
-    actualFrame += 1;
+    framesToRun -= 1;
   }
 }
 
